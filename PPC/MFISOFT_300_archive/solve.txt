@@ -1,0 +1,9 @@
+1) >> binwalk -e -M -d 20 flag
+
+        -e      extract
+        -M      extract extracted files recursively
+        -d 20   set recursive depth to 20 (5 is default)
+
+2) >> grep -rnw '_flag.extracted/' -e 'MFISOFT'
+
+        Because flag has 'MSISOFT{some_text}' format we can find a string recursively with grep
